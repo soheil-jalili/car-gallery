@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Gallery</title>
+    <!-- Main css Link -->
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <!-- FullPages Css Link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css"
@@ -11,19 +14,70 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Reset Link -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
   </head>
   <body>
-    <section id="fullpage">
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-    </section>
+    <div id="fullpage" class="main-section">
+      <section class="section main-section__car-one">
+        <header class="header">
+          <!-- ========== Start Menu ========== -->
+          <nav class="nav__header">
+            <ul class="nav__header-menu">
+              <li class="nav__header-menu__item">
+                <a href="#" class="nav__header-menu__link">صفحه نخست</a>
+              </li>
+              <li class="nav__header-menu__item">
+                <a href="#" class="nav__header-menu__link">خدمات ما</a>
+              </li>
+              <li class="nav__header-menu__item">
+                <a href="#" class="nav__header-menu__link">محصولات ما</a>
+              </li>
+              <li class="nav__header-menu__item">
+                <a href="#" class="nav__header-menu__link">تماس با ما</a>
+              </li>
+              <li class="nav__header-menu__item">
+                <a href="#" class="nav__header-menu__link">درباره ما</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ========== End Menu ========== -->
+
+          <!-- ========== Start Header Content ========== -->
+
+          <div class="slide header__content">
+            <h1>
+              لذت رانندگی پر سرعت و<a href="#" class="header__content-span"
+                >مطمئن</a
+              >
+            </h1>
+          </div>
+          <div class="slide header__content">
+            <h1>
+              زیباترین و<a href="#" class="header__content-span">بروزترین</a>
+            </h1>
+          </div>
+          <div class="slide header__content">
+            <h1>آرام و <a href="#" class="header__content-span">پر قدرت</a></h1>
+          </div>
+          <div class="slide header__content">
+            <h1>سریع و با<a href="#" class="header__content-span">صلابت</a></h1>
+          </div>
+          <!-- ========== End Header Content ========== -->
+        </header>
+      </section>
+      <section class="section main-section__car-two"></section>
+      <section class="section main-section__car-three"></section>
+      <section class="section main-section__car-four"></section>
+      <section class="section main-section__car-footer"></section>
+    </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"
       integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

@@ -1,1 +1,123 @@
-/*# sourceMappingURL=main.css.map */
+/***** Imports *****/
+/***** End Imports *****/
+/***** Font *****/
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.eot") format("eot"), url("../fonts/vazir.woff") format("woff");
+  font-weight: normal;
+}
+/***** End Font *****/
+/***** Final Reset *****/
+html {
+  box-sizing: border-box;
+  font-size: 62.5% !important;
+}
+
+*,
+*::before,
+*::after {
+  font-family: "vazir", sans-serif, Helvetica !important;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem !important;
+  line-height: 1.6;
+  font-family: "vazir", sans-serif, Helvetica !important;
+  direction: rtl;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #fff !important;
+}
+
+#fp-nav ul li a.active span {
+  background-color: #c02 !important;
+}
+
+/***** End Final Reset *****/
+/***** Background & FullPage *****/
+.main-section {
+  /***** Header *****/
+  /***** End Header *****/
+}
+.main-section__car-one {
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section__car-one .header .nav__header {
+  padding: 2.5rem 0 !important;
+}
+.main-section__car-one .header .nav__header-menu {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 3rem;
+  right: 10rem;
+  width: 100%;
+}
+.main-section__car-one .header .nav__header-menu__item {
+  margin-left: 3rem;
+}
+.main-section__car-one .header .nav__header-menu__item .nav__header-menu__link {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.main-section__car-one .header .nav__header-menu__item .nav__header-menu__link:visited,
+.main-section__car-one .header .nav__header-menu__item .nav__header-menu__link :link {
+  color: #fff;
+}
+.main-section__car-one .header .header__content {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.main-section__car-one .header .header__content h1 {
+  margin: 10rem 0;
+  text-align: left;
+  width: 90%;
+}
+.main-section__car-one .header .header__content-span {
+  color: #ff5722;
+  margin-right: 0.5rem;
+  font-size: 5rem;
+}
+.main-section__car-one .header .fp-controlArrow.fp-prev {
+  position: absolute !important;
+  top: 90%;
+  left: 5rem;
+  border-width: 2rem 2rem 2rem 0 !important;
+}
+.main-section__car-one .header .fp-controlArrow.fp-next {
+  position: absolute !important;
+  top: 90% !important;
+  right: 90% !important;
+  border-width: 2rem 0 2rem 2rem !important;
+}
+.main-section__car-two {
+  background-image: url("../images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section__car-three {
+  background-image: url("../images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section__car-four {
+  background-image: url("../images/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section__car-footer {
+  background-color: #000;
+}
+
+/***** End Background & FullPage *****//*# sourceMappingURL=main.css.map */

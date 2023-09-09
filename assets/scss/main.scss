@@ -1,0 +1,136 @@
+/***** Imports *****/
+@import "./variables.scss";
+/***** End Imports *****/
+
+/***** Font *****/
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.ttf") format("truetype"),
+    url("../fonts/vazir.eot") format("eot"),
+    url("../fonts/vazir.woff") format("woff");
+  font-weight: normal;
+}
+/***** End Font *****/
+
+/***** Final Reset *****/
+html {
+  box-sizing: border-box;
+  font-size: 62.5% !important;
+}
+
+*,
+*::before,
+*::after {
+  font-family: $primary-font !important;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem !important;
+  line-height: 1.6;
+  font-family: $primary-font !important;
+  direction: rtl;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: $color-white !important;
+}
+
+#fp-nav ul li a.active span {
+  background-color: #c02 !important;
+}
+/***** End Final Reset *****/
+
+/***** Background & FullPage *****/
+
+.main-section {
+  /***** Header *****/
+  &__car-one {
+    background-image: url("../images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .header {
+      .nav__header {
+        padding: 2.5rem 0 !important;
+        &-menu {
+          display: flex !important;
+          align-items: center;
+          justify-content: flex-start;
+          position: absolute;
+          top: 3rem;
+          right: 10rem;
+          width: 100%;
+          &__item {
+            margin-left: 3rem;
+            .nav__header-menu__link {
+              &:visited,
+              :link {
+                color: $color-white;
+              }
+              color: $color-white;
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+
+      .header__content {
+        font-size: 3rem;
+        font-weight: bold;
+        color: $color-white;
+        h1 {
+          margin: 10rem 0;
+          text-align: left;
+          width: 90%;
+        }
+        &-span {
+          color: $red-color;
+          margin-right: 0.5rem;
+          font-size: 5rem;
+        }
+      }
+      .fp-controlArrow {
+        &.fp-prev {
+          position: absolute !important;
+          top: 90%;
+          left: 5rem;
+          border-width: 2rem 2rem 2rem 0 !important;
+        }
+
+        &.fp-next {
+          position: absolute !important;
+          top: 90% !important;
+          right: 90% !important;
+          border-width: 2rem 0 2rem 2rem !important;
+        }
+      }
+    }
+  }
+  /***** End Header *****/
+  &__car-two {
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__car-three {
+    background-image: url("../images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__car-four {
+    background-image: url("../images/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__car-footer {
+    background-color: $dark-color;
+  }
+}
+
+/***** End Background & FullPage *****/
